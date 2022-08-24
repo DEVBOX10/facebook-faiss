@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File IndexBinaryHash.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-indexbinaryhash-h">
-<h1>File IndexBinaryHash.h<a class="headerlink" href="#file-indexbinaryhash-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-indexbinaryhash-h">
+<h1>File IndexBinaryHash.h<a class="headerlink" href="#file-indexbinaryhash-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -320,7 +322,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss15IndexBinaryHashE">
 <span id="_CPPv3N5faiss15IndexBinaryHashE"></span><span id="_CPPv2N5faiss15IndexBinaryHashE"></span><span id="faiss::IndexBinaryHash"></span><span class="target" id="structfaiss_1_1IndexBinaryHash"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexBinaryHash</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="IndexBinary_8h.html#_CPPv4N5faiss11IndexBinaryE" title="faiss::IndexBinary"><span class="n"><span class="pre">IndexBinary</span></span></a><a class="headerlink" href="#_CPPv4N5faiss15IndexBinaryHashE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexBinaryHash.h&gt;</em><p>just uses the b first bits as a hash value </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexBinaryHash.h&gt;</em></div>
+<p>just uses the b first bits as a hash value </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -353,7 +357,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d / 8 </p>
 </dd>
 </dl>
@@ -365,7 +369,7 @@
 <dd><p>Same as add, but stores xids instead of sequential ids.</p>
 <p>The default implementation fails with an assertion, as it is not supported by all indexes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>xids</strong> – if non-null, ids to store for the vectors (size n) </p>
 </dd>
 </dl>
@@ -377,7 +381,7 @@
 <dd><p>Query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory). The distances are converted to float to reuse the RangeSearchResult structure, but they are integer. By convention, only distances &lt; radius (strict comparison) are returned, ie. radius = 0 does not return any result and 1 returns only exact same vectors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -393,7 +397,7 @@
 <dd><p>Query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -504,7 +508,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss20IndexBinaryMultiHashE">
 <span id="_CPPv3N5faiss20IndexBinaryMultiHashE"></span><span id="_CPPv2N5faiss20IndexBinaryMultiHashE"></span><span id="faiss::IndexBinaryMultiHash"></span><span class="target" id="structfaiss_1_1IndexBinaryMultiHash"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexBinaryMultiHash</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="IndexBinary_8h.html#_CPPv4N5faiss11IndexBinaryE" title="faiss::IndexBinary"><span class="n"><span class="pre">IndexBinary</span></span></a><a class="headerlink" href="#_CPPv4N5faiss20IndexBinaryMultiHashE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexBinaryHash.h&gt;</em><p>just uses the b first bits as a hash value </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexBinaryHash.h&gt;</em></div>
+<p>just uses the b first bits as a hash value </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -542,7 +548,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d / 8 </p>
 </dd>
 </dl>
@@ -554,7 +560,7 @@
 <dd><p>Query n vectors of dimension d to the index.</p>
 <p>return all vectors with distance &lt; radius. Note that many indexes do not implement the range_search (only the k-NN search is mandatory). The distances are converted to float to reuse the RangeSearchResult structure, but they are integer. By convention, only distances &lt; radius (strict comparison) are returned, ie. radius = 0 does not return any result and 1 returns only exact same vectors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>radius</strong> – search radius </p></li>
@@ -570,7 +576,7 @@
 <dd><p>Query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d / 8 </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -626,7 +632,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

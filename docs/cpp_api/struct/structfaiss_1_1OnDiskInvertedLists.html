@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Struct faiss::OnDiskInvertedLists &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -331,11 +333,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="struct-faiss-ondiskinvertedlists">
-<h1>Struct faiss::OnDiskInvertedLists<a class="headerlink" href="#struct-faiss-ondiskinvertedlists" title="Permalink to this headline">¶</a></h1>
+  <section id="struct-faiss-ondiskinvertedlists">
+<h1>Struct faiss::OnDiskInvertedLists<a class="headerlink" href="#struct-faiss-ondiskinvertedlists" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss19OnDiskInvertedListsE">
-<span id="_CPPv3N5faiss19OnDiskInvertedListsE"></span><span id="_CPPv2N5faiss19OnDiskInvertedListsE"></span><span id="faiss::OnDiskInvertedLists"></span><span class="target" id="structfaiss_1_1OnDiskInvertedLists"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">OnDiskInvertedLists</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../file/InvertedLists_8h.html#_CPPv4N5faiss13InvertedListsE" title="faiss::InvertedLists"><span class="n"><span class="pre">InvertedLists</span></span></a><br /></dt>
+<span id="_CPPv3N5faiss19OnDiskInvertedListsE"></span><span id="_CPPv2N5faiss19OnDiskInvertedListsE"></span><span id="faiss::OnDiskInvertedLists"></span><span class="target" id="structfaiss_1_1OnDiskInvertedLists"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OnDiskInvertedLists</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../file/AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../file/InvertedLists_8h.html#_CPPv4N5faiss13InvertedListsE" title="faiss::InvertedLists"><span class="n"><span class="pre">InvertedLists</span></span></a><br /></dt>
 <dd><p>On-disk storage of inverted lists.</p>
 <p>The data is stored in a mmapped chunk of memory (base ptointer ptr, size totsize). Each list is a range of memory that contains (object List) that contains:</p>
 <p><ul class="simple">
@@ -385,7 +387,7 @@
 <span id="_CPPv3NK5faiss19OnDiskInvertedLists9get_codesE6size_t"></span><span id="_CPPv2NK5faiss19OnDiskInvertedLists9get_codesE6size_t"></span><span id="faiss::OnDiskInvertedLists::get_codes__sC"></span><span class="target" id="structfaiss_1_1OnDiskInvertedLists_1a0fd755d5a0a55e9b9bf36f4ad32b2290"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_codes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><br /></dt>
 <dd><p>get the codes for an inverted list must be released by release_codes</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>codes size list_size * code_size </p>
 </dd>
 </dl>
@@ -396,7 +398,7 @@
 <span id="_CPPv3NK5faiss19OnDiskInvertedLists7get_idsE6size_t"></span><span id="_CPPv2NK5faiss19OnDiskInvertedLists7get_idsE6size_t"></span><span id="faiss::OnDiskInvertedLists::get_ids__sC"></span><span class="target" id="structfaiss_1_1OnDiskInvertedLists_1a6849bca243f4b90d04bd3ee089b3a73e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss19OnDiskInvertedLists5idx_tE" title="faiss::OnDiskInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_ids</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><br /></dt>
 <dd><p>get the ids for an inverted list must be released by release_ids</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ids size list_size </p>
 </dd>
 </dl>
@@ -497,7 +499,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19OnDiskInvertedLists13get_single_idE6size_t6size_t">
 <span id="_CPPv3NK5faiss19OnDiskInvertedLists13get_single_idE6size_t6size_t"></span><span id="_CPPv2NK5faiss19OnDiskInvertedLists13get_single_idE6size_t6size_t"></span><span id="faiss::OnDiskInvertedLists::get_single_id__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1ac1fb72410cefa4f4d28ec90677c02ab3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss19OnDiskInvertedLists5idx_tE" title="faiss::OnDiskInvertedLists::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_single_id</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single id in an inverted list </p>
 </dd>
 </dl>
@@ -507,7 +509,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss19OnDiskInvertedLists15get_single_codeE6size_t6size_t">
 <span id="_CPPv3NK5faiss19OnDiskInvertedLists15get_single_codeE6size_t6size_t"></span><span id="_CPPv2NK5faiss19OnDiskInvertedLists15get_single_codeE6size_t6size_t"></span><span id="faiss::OnDiskInvertedLists::get_single_code__s.sC"></span><span class="target" id="structfaiss_1_1InvertedLists_1a8d3382c2a672340abd227c00cf84ad42"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_single_code</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list_no</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">offset</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>a single code in an inverted list (should be deallocated with release_codes) </p>
 </dd>
 </dl>
@@ -656,7 +658,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

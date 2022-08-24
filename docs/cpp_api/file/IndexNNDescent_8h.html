@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File IndexNNDescent.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-indexnndescent-h">
-<h1>File IndexNNDescent.h<a class="headerlink" href="#file-indexnndescent-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-indexnndescent-h">
+<h1>File IndexNNDescent.h<a class="headerlink" href="#file-indexnndescent-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -312,7 +314,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss14IndexNNDescentE">
 <span id="_CPPv3N5faiss14IndexNNDescentE"></span><span id="_CPPv2N5faiss14IndexNNDescentE"></span><span id="faiss::IndexNNDescent"></span><span class="target" id="structfaiss_1_1IndexNNDescent"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexNNDescent</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><a class="headerlink" href="#_CPPv4N5faiss14IndexNNDescentE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexNNDescent.h&gt;</em><p>The NNDescent index is a normal random-access index with an NNDescent link structure built on top </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexNNDescent.h&gt;</em></div>
+<p>The NNDescent index is a normal random-access index with an NNDescent link structure built on top </p>
 <p>Subclassed by <a class="reference internal" href="../struct/structfaiss_1_1IndexNNDescentFlat.html#structfaiss_1_1IndexNNDescentFlat"><span class="std std-ref">faiss::IndexNNDescentFlat</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
@@ -351,7 +355,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -375,7 +379,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -414,7 +418,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexNNDescentFlatE">
 <span id="_CPPv3N5faiss18IndexNNDescentFlatE"></span><span id="_CPPv2N5faiss18IndexNNDescentFlatE"></span><span id="faiss::IndexNNDescentFlat"></span><span class="target" id="structfaiss_1_1IndexNNDescentFlat"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexNNDescentFlat</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss14IndexNNDescentE" title="faiss::IndexNNDescent"><span class="n"><span class="pre">IndexNNDescent</span></span></a><a class="headerlink" href="#_CPPv4N5faiss18IndexNNDescentFlatE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexNNDescent.h&gt;</em><p>Flat index topped with with a NNDescent structure to access elements more efficiently. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexNNDescent.h&gt;</em></div>
+<p>Flat index topped with with a NNDescent structure to access elements more efficiently. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -447,7 +453,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -471,7 +477,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -509,7 +515,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File MetaIndexes.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-metaindexes-h">
-<h1>File MetaIndexes.h<a class="headerlink" href="#file-metaindexes-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-metaindexes-h">
+<h1>File MetaIndexes.h<a class="headerlink" href="#file-metaindexes-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -335,7 +337,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4I0EN5faiss19IndexIDMap2TemplateE">
 <span id="_CPPv3I0EN5faiss19IndexIDMap2TemplateE"></span><span id="_CPPv2I0EN5faiss19IndexIDMap2TemplateE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexT</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structfaiss_1_1IndexIDMap2Template"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexIDMap2Template</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4I0EN5faiss18IndexIDMapTemplateE" title="faiss::IndexIDMapTemplate"><span class="n"><span class="pre">IndexIDMapTemplate</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN5faiss19IndexIDMap2TemplateE" title="faiss::IndexIDMap2Template::IndexT"><span class="n"><span class="pre">IndexT</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I0EN5faiss19IndexIDMap2TemplateE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;MetaIndexes.h&gt;</em><p>same as IndexIDMap but also provides an efficient reconstruction implementation via a 2-way index </p>
+<dd><div class="docutils container">
+<em>#include &lt;MetaIndexes.h&gt;</em></div>
+<p>same as IndexIDMap but also provides an efficient reconstruction implementation via a 2-way index </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -449,7 +453,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4I0EN5faiss18IndexIDMapTemplateE">
 <span id="_CPPv3I0EN5faiss18IndexIDMapTemplateE"></span><span id="_CPPv2I0EN5faiss18IndexIDMapTemplateE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexT</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structfaiss_1_1IndexIDMapTemplate"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexIDMapTemplate</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN5faiss18IndexIDMapTemplateE" title="faiss::IndexIDMapTemplate::IndexT"><span class="n"><span class="pre">IndexT</span></span></a><a class="headerlink" href="#_CPPv4I0EN5faiss18IndexIDMapTemplateE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;MetaIndexes.h&gt;</em><p><a class="reference internal" href="../struct/structfaiss_1_1Index.html#structfaiss_1_1Index"><span class="std std-ref">Index</span></a> that translates search results to ids </p>
+<dd><div class="docutils container">
+<em>#include &lt;MetaIndexes.h&gt;</em></div>
+<p><a class="reference internal" href="../struct/structfaiss_1_1Index.html#structfaiss_1_1Index"><span class="std std-ref">Index</span></a> that translates search results to ids </p>
 <p>Subclassed by <a class="reference internal" href="../struct/structfaiss_1_1IndexIDMap2Template.html#structfaiss_1_1IndexIDMap2Template"><span class="std std-ref">faiss::IndexIDMap2Template&lt; IndexT &gt;</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
@@ -480,7 +486,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexIDMapTemplate12add_with_idsE5idx_tPK11component_tPK5idx_t">
 <span id="_CPPv3N5faiss18IndexIDMapTemplate12add_with_idsE5idx_tPK11component_tPK5idx_t"></span><span id="_CPPv2N5faiss18IndexIDMapTemplate12add_with_idsE5idx_tPK11component_tPK5idx_t"></span><span id="faiss::IndexIDMapTemplate::add_with_ids__idx_t.component_tCP.idx_tCP"></span><span class="target" id="structfaiss_1_1IndexIDMapTemplate_1a4cc8ae99154bf436d1cbe70a4205bfcd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_with_ids</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N5faiss18IndexIDMapTemplate5idx_tE" title="faiss::IndexIDMapTemplate::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss18IndexIDMapTemplate11component_tE" title="faiss::IndexIDMapTemplate::component_t"><span class="n"><span class="pre">component_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss18IndexIDMapTemplate5idx_tE" title="faiss::IndexIDMapTemplate::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">xids</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexIDMapTemplate12add_with_idsE5idx_tPK11component_tPK5idx_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>xids</strong> – if non-null, ids to store for the vectors (size n) </p>
 </dd>
 </dl>
@@ -554,7 +560,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss17IndexSplitVectorsE">
 <span id="_CPPv3N5faiss17IndexSplitVectorsE"></span><span id="_CPPv2N5faiss17IndexSplitVectorsE"></span><span id="faiss::IndexSplitVectors"></span><span class="target" id="structfaiss_1_1IndexSplitVectors"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexSplitVectors</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><a class="headerlink" href="#_CPPv4N5faiss17IndexSplitVectorsE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;MetaIndexes.h&gt;</em><p>splits input vectors in segments and assigns each segment to a sub-index used to distribute a <a class="reference internal" href="../struct/structfaiss_1_1MultiIndexQuantizer.html#structfaiss_1_1MultiIndexQuantizer"><span class="std std-ref">MultiIndexQuantizer</span></a> </p>
+<dd><div class="docutils container">
+<em>#include &lt;MetaIndexes.h&gt;</em></div>
+<p>splits input vectors in segments and assigns each segment to a sub-index used to distribute a <a class="reference internal" href="../struct/structfaiss_1_1MultiIndexQuantizer.html#structfaiss_1_1MultiIndexQuantizer"><span class="std std-ref">MultiIndexQuantizer</span></a> </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -579,7 +587,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -591,7 +599,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -606,7 +614,7 @@
 <span id="_CPPv3N5faiss17IndexSplitVectors5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss17IndexSplitVectors5trainE5idx_tPKf"></span><span id="faiss::IndexSplitVectors::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexSplitVectors_1aafa4c780e325855fe247052453967845"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss17IndexSplitVectors5idx_tE" title="faiss::IndexSplitVectors::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss17IndexSplitVectors5trainE5idx_tPKf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -654,7 +662,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File IndexHNSW.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-indexhnsw-h">
-<h1>File IndexHNSW.h<a class="headerlink" href="#file-indexhnsw-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-indexhnsw-h">
+<h1>File IndexHNSW.h<a class="headerlink" href="#file-indexhnsw-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -312,7 +314,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss9IndexHNSWE">
 <span id="_CPPv3N5faiss9IndexHNSWE"></span><span id="_CPPv2N5faiss9IndexHNSWE"></span><span id="faiss::IndexHNSW"></span><span class="target" id="structfaiss_1_1IndexHNSW"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexHNSW</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><a class="headerlink" href="#_CPPv4N5faiss9IndexHNSWE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexHNSW.h&gt;</em><p>The HNSW index is a normal random-access index with a HNSW link structure built on top </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexHNSW.h&gt;</em></div>
+<p>The HNSW index is a normal random-access index with a HNSW link structure built on top </p>
 <p>Subclassed by <a class="reference internal" href="../struct/structfaiss_1_1IndexHNSW2Level.html#structfaiss_1_1IndexHNSW2Level"><span class="std std-ref">faiss::IndexHNSW2Level</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1IndexHNSWFlat.html#structfaiss_1_1IndexHNSWFlat"><span class="std std-ref">faiss::IndexHNSWFlat</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1IndexHNSWPQ.html#structfaiss_1_1IndexHNSWPQ"><span class="std std-ref">faiss::IndexHNSWPQ</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1IndexHNSWSQ.html#structfaiss_1_1IndexHNSWSQ"><span class="std std-ref">faiss::IndexHNSWSQ</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
@@ -345,7 +349,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -369,7 +373,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -394,7 +398,7 @@
 <span id="_CPPv3NK5faiss9IndexHNSW14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="_CPPv2NK5faiss9IndexHNSW14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="faiss::IndexHNSW::search_level_0__idx_t.floatCP.idx_t.storage_idx_tCP.floatCP.floatP.idx_tP.i.iC"></span><span class="target" id="structfaiss_1_1IndexHNSW_1a2a98a87b1d348addb09b6ee1fbdd5692"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_level_0</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexHNSW5idx_tE" title="faiss::IndexHNSW::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexHNSW5idx_tE" title="faiss::IndexHNSW::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss9IndexHNSW13storage_idx_tE" title="faiss::IndexHNSW::storage_idx_t"><span class="n"><span class="pre">storage_idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest_d</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss9IndexHNSW5idx_tE" title="faiss::IndexHNSW::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nprobe</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss9IndexHNSW14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform search only on level 0, given the starting points for each vertex.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>search_type</strong> – 1:perform one search per nprobe, 2: enqueue all entry points </p>
 </dd>
 </dl>
@@ -451,7 +455,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss15IndexHNSW2LevelE">
 <span id="_CPPv3N5faiss15IndexHNSW2LevelE"></span><span id="_CPPv2N5faiss15IndexHNSW2LevelE"></span><span id="faiss::IndexHNSW2Level"></span><span class="target" id="structfaiss_1_1IndexHNSW2Level"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexHNSW2Level</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss9IndexHNSWE" title="faiss::IndexHNSW"><span class="n"><span class="pre">IndexHNSW</span></span></a><a class="headerlink" href="#_CPPv4N5faiss15IndexHNSW2LevelE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexHNSW.h&gt;</em><p>2-level code structure with fast random access </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexHNSW.h&gt;</em></div>
+<p>2-level code structure with fast random access </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -489,7 +495,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -507,7 +513,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -532,7 +538,7 @@
 <span id="_CPPv3NK5faiss15IndexHNSW2Level14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="_CPPv2NK5faiss15IndexHNSW2Level14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="faiss::IndexHNSW2Level::search_level_0__idx_t.floatCP.idx_t.storage_idx_tCP.floatCP.floatP.idx_tP.i.iC"></span><span class="target" id="structfaiss_1_1IndexHNSW_1a2a98a87b1d348addb09b6ee1fbdd5692"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_level_0</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss15IndexHNSW2Level5idx_tE" title="faiss::IndexHNSW2Level::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss15IndexHNSW2Level5idx_tE" title="faiss::IndexHNSW2Level::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss15IndexHNSW2Level13storage_idx_tE" title="faiss::IndexHNSW2Level::storage_idx_t"><span class="n"><span class="pre">storage_idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest_d</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss15IndexHNSW2Level5idx_tE" title="faiss::IndexHNSW2Level::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nprobe</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss15IndexHNSW2Level14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform search only on level 0, given the starting points for each vertex.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>search_type</strong> – 1:perform one search per nprobe, 2: enqueue all entry points </p>
 </dd>
 </dl>
@@ -589,7 +595,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss13IndexHNSWFlatE">
 <span id="_CPPv3N5faiss13IndexHNSWFlatE"></span><span id="_CPPv2N5faiss13IndexHNSWFlatE"></span><span id="faiss::IndexHNSWFlat"></span><span class="target" id="structfaiss_1_1IndexHNSWFlat"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexHNSWFlat</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss9IndexHNSWE" title="faiss::IndexHNSW"><span class="n"><span class="pre">IndexHNSW</span></span></a><a class="headerlink" href="#_CPPv4N5faiss13IndexHNSWFlatE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexHNSW.h&gt;</em><p>Flat index topped with with a HNSW structure to access elements more efficiently. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexHNSW.h&gt;</em></div>
+<p>Flat index topped with with a HNSW structure to access elements more efficiently. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -616,7 +624,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -640,7 +648,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -665,7 +673,7 @@
 <span id="_CPPv3NK5faiss13IndexHNSWFlat14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="_CPPv2NK5faiss13IndexHNSWFlat14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="faiss::IndexHNSWFlat::search_level_0__idx_t.floatCP.idx_t.storage_idx_tCP.floatCP.floatP.idx_tP.i.iC"></span><span class="target" id="structfaiss_1_1IndexHNSW_1a2a98a87b1d348addb09b6ee1fbdd5692"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_level_0</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss13IndexHNSWFlat5idx_tE" title="faiss::IndexHNSWFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss13IndexHNSWFlat5idx_tE" title="faiss::IndexHNSWFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss13IndexHNSWFlat13storage_idx_tE" title="faiss::IndexHNSWFlat::storage_idx_t"><span class="n"><span class="pre">storage_idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest_d</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss13IndexHNSWFlat5idx_tE" title="faiss::IndexHNSWFlat::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nprobe</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss13IndexHNSWFlat14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform search only on level 0, given the starting points for each vertex.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>search_type</strong> – 1:perform one search per nprobe, 2: enqueue all entry points </p>
 </dd>
 </dl>
@@ -722,7 +730,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss11IndexHNSWPQE">
 <span id="_CPPv3N5faiss11IndexHNSWPQE"></span><span id="_CPPv2N5faiss11IndexHNSWPQE"></span><span id="faiss::IndexHNSWPQ"></span><span class="target" id="structfaiss_1_1IndexHNSWPQ"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexHNSWPQ</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss9IndexHNSWE" title="faiss::IndexHNSW"><span class="n"><span class="pre">IndexHNSW</span></span></a><a class="headerlink" href="#_CPPv4N5faiss11IndexHNSWPQE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexHNSW.h&gt;</em><p>PQ index topped with with a HNSW structure to access elements more efficiently. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexHNSW.h&gt;</em></div>
+<p>PQ index topped with with a HNSW structure to access elements more efficiently. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -755,7 +765,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -773,7 +783,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -798,7 +808,7 @@
 <span id="_CPPv3NK5faiss11IndexHNSWPQ14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="_CPPv2NK5faiss11IndexHNSWPQ14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="faiss::IndexHNSWPQ::search_level_0__idx_t.floatCP.idx_t.storage_idx_tCP.floatCP.floatP.idx_tP.i.iC"></span><span class="target" id="structfaiss_1_1IndexHNSW_1a2a98a87b1d348addb09b6ee1fbdd5692"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_level_0</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexHNSWPQ5idx_tE" title="faiss::IndexHNSWPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexHNSWPQ5idx_tE" title="faiss::IndexHNSWPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss11IndexHNSWPQ13storage_idx_tE" title="faiss::IndexHNSWPQ::storage_idx_t"><span class="n"><span class="pre">storage_idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest_d</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexHNSWPQ5idx_tE" title="faiss::IndexHNSWPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nprobe</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexHNSWPQ14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform search only on level 0, given the starting points for each vertex.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>search_type</strong> – 1:perform one search per nprobe, 2: enqueue all entry points </p>
 </dd>
 </dl>
@@ -855,7 +865,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss11IndexHNSWSQE">
 <span id="_CPPv3N5faiss11IndexHNSWSQE"></span><span id="_CPPv2N5faiss11IndexHNSWSQE"></span><span id="faiss::IndexHNSWSQ"></span><span class="target" id="structfaiss_1_1IndexHNSWSQ"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexHNSWSQ</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss9IndexHNSWE" title="faiss::IndexHNSW"><span class="n"><span class="pre">IndexHNSW</span></span></a><a class="headerlink" href="#_CPPv4N5faiss11IndexHNSWSQE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexHNSW.h&gt;</em><p>SQ index topped with with a HNSW structure to access elements more efficiently. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexHNSW.h&gt;</em></div>
+<p>SQ index topped with with a HNSW structure to access elements more efficiently. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp type">
@@ -882,7 +894,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -906,7 +918,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -931,7 +943,7 @@
 <span id="_CPPv3NK5faiss11IndexHNSWSQ14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="_CPPv2NK5faiss11IndexHNSWSQ14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii"></span><span id="faiss::IndexHNSWSQ::search_level_0__idx_t.floatCP.idx_t.storage_idx_tCP.floatCP.floatP.idx_tP.i.iC"></span><span class="target" id="structfaiss_1_1IndexHNSW_1a2a98a87b1d348addb09b6ee1fbdd5692"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_level_0</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexHNSWSQ5idx_tE" title="faiss::IndexHNSWSQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexHNSWSQ5idx_tE" title="faiss::IndexHNSWSQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss11IndexHNSWSQ13storage_idx_tE" title="faiss::IndexHNSWSQ::storage_idx_t"><span class="n"><span class="pre">storage_idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nearest_d</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss11IndexHNSWSQ5idx_tE" title="faiss::IndexHNSWSQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nprobe</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">search_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss11IndexHNSWSQ14search_level_0E5idx_tPKf5idx_tPK13storage_idx_tPKfPfP5idx_tii" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform search only on level 0, given the starting points for each vertex.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>search_type</strong> – 1:perform one search per nprobe, 2: enqueue all entry points </p>
 </dd>
 </dl>
@@ -1105,7 +1117,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

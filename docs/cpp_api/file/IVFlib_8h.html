@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File IVFlib.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-ivflib-h">
-<h1>File IVFlib.h<a class="headerlink" href="#file-ivflib-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-ivflib-h">
+<h1>File IVFlib.h<a class="headerlink" href="#file-ivflib-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -356,7 +358,7 @@
 <span id="_CPPv3N5faiss6ivflib10merge_intoEP5IndexP5Indexb"></span><span id="_CPPv2N5faiss6ivflib10merge_intoEP5IndexP5Indexb"></span><span id="faiss::ivflib::merge_into__IndexP.IndexP.b"></span><span class="target" id="IVFlib_8h_1a342382b7b7a6c4e769a9b6bbfe8becaa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">merge_into</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">index0</span></span>, <a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">index1</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shift_ids</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss6ivflib10merge_intoEP5IndexP5Indexb" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Merge index1 into index0. Works on <a class="reference internal" href="../struct/structfaiss_1_1IndexIVF.html#structfaiss_1_1IndexIVF"><span class="std std-ref">IndexIVF</span></a>’s and <a class="reference internal" href="../struct/structfaiss_1_1IndexIVF.html#structfaiss_1_1IndexIVF"><span class="std std-ref">IndexIVF</span></a>’s embedded in a <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>. On output, the index1 is empty.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>shift_ids</strong> – translate the ids from index1 to index0-&gt;prev_ntotal </p>
 </dd>
 </dl>
@@ -405,7 +407,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss6ivflib18SlidingIndexWindowE">
 <span id="_CPPv3N5faiss6ivflib18SlidingIndexWindowE"></span><span id="_CPPv2N5faiss6ivflib18SlidingIndexWindowE"></span><span id="faiss::ivflib::SlidingIndexWindow"></span><span class="target" id="structfaiss_1_1ivflib_1_1SlidingIndexWindow"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SlidingIndexWindow</span></span></span><a class="headerlink" href="#_CPPv4N5faiss6ivflib18SlidingIndexWindowE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IVFlib.h&gt;</em><p>A set of IndexIVFs concatenated together in a FIFO fashion. at each “step”, the oldest index slice is removed and a new index is added. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IVFlib.h&gt;</em></div>
+<p>A set of IndexIVFs concatenated together in a FIFO fashion. at each “step”, the oldest index slice is removed and a new index is added. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -419,7 +423,7 @@
 <span id="_CPPv3N5faiss6ivflib18SlidingIndexWindow4stepEPK5Indexb"></span><span id="_CPPv2N5faiss6ivflib18SlidingIndexWindow4stepEPK5Indexb"></span><span id="faiss::ivflib::SlidingIndexWindow::step__IndexCP.b"></span><span class="target" id="structfaiss_1_1ivflib_1_1SlidingIndexWindow_1accf1c7b8de188b74de0d6827beceac7c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">step</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">sub_index</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">remove_oldest</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss6ivflib18SlidingIndexWindow4stepEPK5Indexb" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Add one index to the current index and remove the oldest one.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>sub_index</strong> – slice to swap in (can be NULL) </p></li>
 <li><p><strong>remove_oldest</strong> – if true, remove the oldest slices </p></li>
@@ -468,7 +472,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

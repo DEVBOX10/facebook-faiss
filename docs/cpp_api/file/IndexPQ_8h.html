@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File IndexPQ.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-indexpq-h">
-<h1>File IndexPQ.h<a class="headerlink" href="#file-indexpq-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-indexpq-h">
+<h1>File IndexPQ.h<a class="headerlink" href="#file-indexpq-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -320,7 +322,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss7IndexPQE">
 <span id="_CPPv3N5faiss7IndexPQE"></span><span id="_CPPv2N5faiss7IndexPQE"></span><span id="faiss::IndexPQ"></span><span class="target" id="structfaiss_1_1IndexPQ"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexPQ</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><a class="headerlink" href="#_CPPv4N5faiss7IndexPQE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexPQ.h&gt;</em><p><a class="reference internal" href="../struct/structfaiss_1_1Index.html#structfaiss_1_1Index"><span class="std std-ref">Index</span></a> based on a product quantizer. Stored vectors are approximated by PQ codes. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexPQ.h&gt;</em></div>
+<p><a class="reference internal" href="../struct/structfaiss_1_1Index.html#structfaiss_1_1Index"><span class="std std-ref">Index</span></a> based on a product quantizer. Stored vectors are approximated by PQ codes. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
 <dl class="cpp enum">
@@ -374,7 +378,7 @@
 <span id="_CPPv3N5faiss7IndexPQ7IndexPQEi6size_t6size_t10MetricType"></span><span id="_CPPv2N5faiss7IndexPQ7IndexPQEi6size_t6size_t10MetricType"></span><span id="faiss::IndexPQ::IndexPQ__i.s.s.MetricType"></span><span class="target" id="structfaiss_1_1IndexPQ_1ab8d0bbf8a0dab39b236e0d1633923746"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexPQ</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">M</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbits</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricTypeE" title="faiss::MetricType"><span class="n"><span class="pre">MetricType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">metric</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricType9METRIC_L2E" title="faiss::METRIC_L2"><span class="n"><span class="pre">METRIC_L2</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss7IndexPQ7IndexPQEi6size_t6size_t10MetricType" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Constructor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimensionality of the input vectors </p></li>
 <li><p><strong>M</strong> – number of subquantizers </p></li>
@@ -397,7 +401,7 @@
 <span id="_CPPv3N5faiss7IndexPQ5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss7IndexPQ5trainE5idx_tPKf"></span><span id="faiss::IndexPQ::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexPQ_1a87898add5ab4d86ba901ca79778fc11e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss7IndexPQ5idx_tE" title="faiss::IndexPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss7IndexPQ5trainE5idx_tPKf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -412,7 +416,7 @@
 <dd><p>Add n vectors of dimension d to the index.</p>
 <p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>x</strong> – input matrix, size n * d </p>
 </dd>
 </dl>
@@ -424,7 +428,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -446,7 +450,7 @@
 <dd><p>Reconstruct vectors i0 to i0 + ni - 1</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>recons</strong> – reconstucted vector (size ni * d) </p>
 </dd>
 </dl>
@@ -458,7 +462,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -484,7 +488,7 @@
 <span id="_CPPv3NK5faiss7IndexPQ9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss7IndexPQ9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexPQ::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexPQ_1a438591a838aad52cd69e021c7b93110f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss7IndexPQ5idx_tE" title="faiss::IndexPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss7IndexPQ9sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>encode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>x</strong> – input vectors, size n * d </p></li>
@@ -499,7 +503,7 @@
 <span id="_CPPv3NK5faiss7IndexPQ9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss7IndexPQ9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexPQ::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexPQ_1a104104a52149ebdcb8ab79dc01180b6e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss7IndexPQ5idx_tE" title="faiss::IndexPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss7IndexPQ9sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>encode a set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – number of vectors </p></li>
 <li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexPQ.html#structfaiss_1_1IndexPQ_1ae312739a391a32d77fc87699f2dc894c"><span class="std std-ref">sa_code_size()</span></a> </p></li>
@@ -526,7 +530,7 @@
 <span id="_CPPv3N5faiss7IndexPQ26hamming_distance_histogramE5idx_tPKf5idx_tPKfP7int64_t"></span><span id="_CPPv2N5faiss7IndexPQ26hamming_distance_histogramE5idx_tPKf5idx_tPKfP7int64_t"></span><span id="faiss::IndexPQ::hamming_distance_histogram__idx_t.floatCP.idx_t.floatCP.int64_tP"></span><span class="target" id="structfaiss_1_1IndexPQ_1a0560fe2b1bd291d868822e7b2754ecf0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hamming_distance_histogram</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss7IndexPQ5idx_tE" title="faiss::IndexPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss7IndexPQ5idx_tE" title="faiss::IndexPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">nb</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">xb</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dist_histogram</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss7IndexPQ26hamming_distance_histogramE5idx_tPKf5idx_tPKfP7int64_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>prepare query for a polysemous search, but instead of computing the result, just get the histogram of Hamming distances. May be computed on a provided dataset if xb != NULL </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>dist_histogram</strong> – (M * nbits + 1) </p>
 </dd>
 </dl>
@@ -537,7 +541,7 @@
 <span id="_CPPv3NK5faiss7IndexPQ22hamming_distance_tableE5idx_tPKfP7int32_t"></span><span id="_CPPv2NK5faiss7IndexPQ22hamming_distance_tableE5idx_tPKfP7int32_t"></span><span id="faiss::IndexPQ::hamming_distance_table__idx_t.floatCP.int32_tPC"></span><span class="target" id="structfaiss_1_1IndexPQ_1ac1c78cf420aada3a54e00bc65ba3eae6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hamming_distance_table</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss7IndexPQ5idx_tE" title="faiss::IndexPQ::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dis</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss7IndexPQ22hamming_distance_tableE5idx_tPKfP7int32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>compute pairwise distances between queries and database</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of query vectors </p></li>
 <li><p><strong>x</strong> – query vector, size n * d </p></li>
@@ -596,7 +600,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss12IndexPQStatsE">
 <span id="_CPPv3N5faiss12IndexPQStatsE"></span><span id="_CPPv2N5faiss12IndexPQStatsE"></span><span id="faiss::IndexPQStats"></span><span class="target" id="structfaiss_1_1IndexPQStats"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexPQStats</span></span></span><a class="headerlink" href="#_CPPv4N5faiss12IndexPQStatsE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexPQ.h&gt;</em><p>statistics are robust to internal threading, but not if <a class="reference internal" href="../struct/structfaiss_1_1IndexPQ.html#structfaiss_1_1IndexPQ_1a491ba3ed34093513e6a850fbca0abdd2"><span class="std std-ref">IndexPQ::search</span></a> is called by multiple threads </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexPQ.h&gt;</em></div>
+<p>statistics are robust to internal threading, but not if <a class="reference internal" href="../struct/structfaiss_1_1IndexPQ.html#structfaiss_1_1IndexPQ_1a491ba3ed34093513e6a850fbca0abdd2"><span class="std std-ref">IndexPQ::search</span></a> is called by multiple threads </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -633,7 +639,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss19MultiIndexQuantizerE">
 <span id="_CPPv3N5faiss19MultiIndexQuantizerE"></span><span id="_CPPv2N5faiss19MultiIndexQuantizerE"></span><span id="faiss::MultiIndexQuantizer"></span><span class="target" id="structfaiss_1_1MultiIndexQuantizer"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MultiIndexQuantizer</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><a class="headerlink" href="#_CPPv4N5faiss19MultiIndexQuantizerE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexPQ.h&gt;</em><p>Quantizer where centroids are virtual: they are the Cartesian product of sub-centroids. </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexPQ.h&gt;</em></div>
+<p>Quantizer where centroids are virtual: they are the Cartesian product of sub-centroids. </p>
 <p>Subclassed by <a class="reference internal" href="../struct/structfaiss_1_1MultiIndexQuantizer2.html#structfaiss_1_1MultiIndexQuantizer2"><span class="std std-ref">faiss::MultiIndexQuantizer2</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
@@ -642,7 +650,7 @@
 <span id="_CPPv3N5faiss19MultiIndexQuantizer19MultiIndexQuantizerEi6size_t6size_t"></span><span id="_CPPv2N5faiss19MultiIndexQuantizer19MultiIndexQuantizerEi6size_t6size_t"></span><span id="faiss::MultiIndexQuantizer::MultiIndexQuantizer__i.s.s"></span><span class="target" id="structfaiss_1_1MultiIndexQuantizer_1a01a568055ebc1e841f7e4218722efa01"></span><span class="sig-name descname"><span class="n"><span class="pre">MultiIndexQuantizer</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">M</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nbits</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss19MultiIndexQuantizer19MultiIndexQuantizerEi6size_t6size_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>number of bit per subvector index </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>d</strong> – dimension of the input vectors </p></li>
 <li><p><strong>M</strong> – number of subquantizers </p></li>
@@ -656,7 +664,7 @@
 <span id="_CPPv3N5faiss19MultiIndexQuantizer5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss19MultiIndexQuantizer5trainE5idx_tPKf"></span><span id="faiss::MultiIndexQuantizer::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1MultiIndexQuantizer_1a6fa1d1a295eb2d4377b8de5096ab3ef4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss19MultiIndexQuantizer5idx_tE" title="faiss::MultiIndexQuantizer::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss19MultiIndexQuantizer5trainE5idx_tPKf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -671,7 +679,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -704,7 +712,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -727,7 +735,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss20MultiIndexQuantizer2E">
 <span id="_CPPv3N5faiss20MultiIndexQuantizer2E"></span><span id="_CPPv2N5faiss20MultiIndexQuantizer2E"></span><span id="faiss::MultiIndexQuantizer2"></span><span class="target" id="structfaiss_1_1MultiIndexQuantizer2"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MultiIndexQuantizer2</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss19MultiIndexQuantizerE" title="faiss::MultiIndexQuantizer"><span class="n"><span class="pre">MultiIndexQuantizer</span></span></a><a class="headerlink" href="#_CPPv4N5faiss20MultiIndexQuantizer2E" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexPQ.h&gt;</em><p><a class="reference internal" href="../struct/structfaiss_1_1MultiIndexQuantizer.html#structfaiss_1_1MultiIndexQuantizer"><span class="std std-ref">MultiIndexQuantizer</span></a> where the PQ assignmnet is performed by sub-indexes </p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexPQ.h&gt;</em></div>
+<p><a class="reference internal" href="../struct/structfaiss_1_1MultiIndexQuantizer.html#structfaiss_1_1MultiIndexQuantizer"><span class="std std-ref">MultiIndexQuantizer</span></a> where the PQ assignmnet is performed by sub-indexes </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -745,7 +755,7 @@
 <span id="_CPPv3N5faiss20MultiIndexQuantizer25trainE5idx_tPKf"></span><span id="_CPPv2N5faiss20MultiIndexQuantizer25trainE5idx_tPKf"></span><span id="faiss::MultiIndexQuantizer2::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1MultiIndexQuantizer2_1a553b9a33e9be7f231ffdc0ac53c59e7c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss20MultiIndexQuantizer25idx_tE" title="faiss::MultiIndexQuantizer2::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss20MultiIndexQuantizer25trainE5idx_tPKf" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Perform training on a representative set of vectors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n</strong> – nb of training vectors </p></li>
 <li><p><strong>x</strong> – training vecors, size n * d </p></li>
@@ -760,7 +770,7 @@
 <dd><p>query n vectors of dimension d to the index.</p>
 <p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
 <li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
@@ -788,7 +798,7 @@
 <dd><p>Reconstruct a stored vector (or an approximation if lossy coding)</p>
 <p>this function may not be defined for some indexes </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>key</strong> – id of the vector to reconstruct </p></li>
 <li><p><strong>recons</strong> – reconstucted vector (size d) </p></li>
@@ -821,7 +831,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

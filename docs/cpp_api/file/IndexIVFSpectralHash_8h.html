@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File IndexIVFSpectralHash.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-indexivfspectralhash-h">
-<h1>File IndexIVFSpectralHash.h<a class="headerlink" href="#file-indexivfspectralhash-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-indexivfspectralhash-h">
+<h1>File IndexIVFSpectralHash.h<a class="headerlink" href="#file-indexivfspectralhash-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -312,7 +314,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss20IndexIVFSpectralHashE">
 <span id="_CPPv3N5faiss20IndexIVFSpectralHashE"></span><span id="_CPPv2N5faiss20IndexIVFSpectralHashE"></span><span id="faiss::IndexIVFSpectralHash"></span><span class="target" id="structfaiss_1_1IndexIVFSpectralHash"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexIVFSpectralHash</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AlignedTable_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="IndexIVF_8h.html#_CPPv4N5faiss8IndexIVFE" title="faiss::IndexIVF"><span class="n"><span class="pre">IndexIVF</span></span></a><a class="headerlink" href="#_CPPv4N5faiss20IndexIVFSpectralHashE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;IndexIVFSpectralHash.h&gt;</em><p>Inverted list that stores binary codes of size nbit. Before the binary conversion, the dimension of the vectors is transformed from dim d into dim nbit by vt (a random rotation by default).</p>
+<dd><div class="docutils container">
+<em>#include &lt;IndexIVFSpectralHash.h&gt;</em></div>
+<p>Inverted list that stores binary codes of size nbit. Before the binary conversion, the dimension of the vectors is transformed from dim d into dim nbit by vt (a random rotation by default).</p>
 <p>Each coordinate is subtracted from a value determined by threshold_type, and split into intervals of size period. Half of the interval is a 0 bit, the other half a 1. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
@@ -366,7 +370,7 @@
 <span id="_CPPv3NK5faiss20IndexIVFSpectralHash14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="_CPPv2NK5faiss20IndexIVFSpectralHash14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb"></span><span id="faiss::IndexIVFSpectralHash::encode_vectors__idx_t.floatCP.idx_tCP.uint8_tP.bC"></span><span class="target" id="structfaiss_1_1IndexIVFSpectralHash_1aecae74e51701e356d64788404814bb46"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">encode_vectors</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss20IndexIVFSpectralHash5idx_tE" title="faiss::IndexIVFSpectralHash::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacefaiss.html#_CPPv4N5faiss20IndexIVFSpectralHash5idx_tE" title="faiss::IndexIVFSpectralHash::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">list_nos</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">codes</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">include_listnos</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss20IndexIVFSpectralHash14encode_vectorsE5idx_tPKfPK5idx_tP7uint8_tb" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Encodes a set of vectors as they would appear in the inverted lists</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>list_nos</strong> – inverted list ids as returned by the quantizer (size n). -1s are ignored. </p></li>
 <li><p><strong>codes</strong> – output codes, size n * code_size </p></li>
@@ -425,7 +429,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>

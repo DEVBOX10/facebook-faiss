@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>File ordered_key_value.h &mdash; Faiss  documentation</title>
@@ -36,6 +37,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -288,8 +290,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="file-ordered-key-value-h">
-<h1>File ordered_key_value.h<a class="headerlink" href="#file-ordered-key-value-h" title="Permalink to this headline">¶</a></h1>
+  <section id="file-ordered-key-value-h">
+<h1>File ordered_key_value.h<a class="headerlink" href="#file-ordered-key-value-h" title="Permalink to this heading">¶</a></h1>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
@@ -345,7 +347,9 @@
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4I00EN5faiss4CMaxE">
 <span id="_CPPv3I00EN5faiss4CMaxE"></span><span id="_CPPv2I00EN5faiss4CMaxE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T_</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TI_</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structfaiss_1_1CMax"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CMax</span></span></span><a class="headerlink" href="#_CPPv4I00EN5faiss4CMaxE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><em>#include &lt;ordered_key_value.h&gt;</em><p>The C object gives the type T of the values of a key-value storage, the type of the keys, TI and the comparison that is done: <a class="reference internal" href="../struct/structfaiss_1_1CMax.html#structfaiss_1_1CMax"><span class="std std-ref">CMax</span></a> for a decreasing series and <a class="reference internal" href="../struct/structfaiss_1_1CMin.html#structfaiss_1_1CMin"><span class="std std-ref">CMin</span></a> for increasing series. In other words, for a given threshold threshold, an incoming value x is kept if <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">::</span><span class="n">cmp</span><span class="p">(</span><span class="n">threshold</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<dd><div class="docutils container">
+<em>#include &lt;ordered_key_value.h&gt;</em></div>
+<p>The C object gives the type T of the values of a key-value storage, the type of the keys, TI and the comparison that is done: <a class="reference internal" href="../struct/structfaiss_1_1CMax.html#structfaiss_1_1CMax"><span class="std std-ref">CMax</span></a> for a decreasing series and <a class="reference internal" href="../struct/structfaiss_1_1CMin.html#structfaiss_1_1CMin"><span class="std std-ref">CMin</span></a> for increasing series. In other words, for a given threshold threshold, an incoming value x is kept if <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">::</span><span class="n">cmp</span><span class="p">(</span><span class="n">threshold</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </p>
@@ -447,7 +451,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
